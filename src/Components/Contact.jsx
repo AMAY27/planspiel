@@ -29,7 +29,7 @@ const Contact = ({styles}) => {
   return (
     <div className='contact-div' style={newstyles}>
         <div className="map-div" style={mapstyles}>
-            <img src="src/assets/man-311326.svg" alt="" />
+            <img src="/assets/man-311326.svg" alt="" />
         </div>
         <div id="form-div">
             <form action="">

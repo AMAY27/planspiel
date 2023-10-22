@@ -58,10 +58,10 @@ function App() {
                 <div>
                   <div id="mobilemain">
                     <div id="mobilenav">
-                      <img src="src/assets/logo.jpeg" alt="" className='moblogoimg' />
+                      <img src="/assets/logo.jpeg" alt="" className='moblogoimg' />
                     </div>
                     <div className='mobimgdiv'>
-                      <img src="src/assets/squares-311941.svg" alt="" />
+                      <img src="/assets/squares-311941.svg" alt="" />
                     </div>
                     <div className="menubar optionsdiv">
                       <div onClick={handleMenuClick}>
@@ -90,7 +90,7 @@ function App() {
               <div>
                 <div id="homemain">
                   <nav id="nav">
-                    <img src="src/assets/logo.jpeg" alt="" className='logoimg' />  
+                    <img src="/assets/logo.jpeg" alt="" className='logoimg' />  
                     <div className="headings">
                       {options.map((option) => (
                         <h1 key={option} onClick={() => handlenavCLick(option)}>{option}</h1>
@@ -100,7 +100,7 @@ function App() {
                   </nav>
                   <div className='homemainchilds'>
                     <div className='imgdiv'>
-                      <img src="src/assets/squares-311941.svg" alt="" />
+                      <img src="/assets/squares-311941.svg" alt="" />
                     </div>
                     <div className='heroheaddiv'>
                       <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.</h2>
