@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./assets/Copperplate Gothic Std 32 BC.otf') format('truetype');
+  /* Add other font properties like font-weight, font-style, etc. */
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -24,7 +30,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 30px 10vw;
+  padding: 15px 5vw;
 }
 
 #mobilenav{
@@ -32,7 +38,22 @@ html, body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 30px 10vw;
+  padding: 15px 10vw;
+  height: auto;
+}
+
+.mobilemain{
+  height: auto;
+}
+
+.optionsdiv{
+  font-size: large;
+  background-color: #0484f3;
+}
+
+#mobilenav img{
+  height: 18vw;
+  width: 20vw;
 }
 
 
@@ -41,10 +62,11 @@ html, body {
   font-weight: bold;
   height: 40px;
   font-size: 28px;
+  font-family: "CustomFont";
 }
 
 .logoimg{
-  height: 4vw;
+  height: 8vw;
   width: 10vw;
 }
 
@@ -230,7 +252,6 @@ html, body {
 } */
 #mobcontact h1{
   color: transparent;
-  -webkit-text-stroke: 2px darkgreen;
   font-size: 18vw;
   font-weight: 800;
   letter-spacing: 0vw;
@@ -253,4 +274,5 @@ html, body {
   justify-content: center;
   text-align: center;
   color: #0484f3;
+  font-family: "CustomFont";
 }

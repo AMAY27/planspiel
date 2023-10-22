@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./assets/Copperplate Gothic Std 32 BC.otf') format('truetype');
+    /* Add other font properties like font-weight, font-style, etc. */
+  }
+
 .contact-div{
     display: flex;
     padding: 1vw 1.5vw;
@@ -85,7 +91,7 @@ form .formrow .textarea{
 .formbtn{
     padding: 0.5vw 0.8vw;
     border-radius: 5px;
-    background-color: yellowgreen;
+    background-color: white;
     font-size: 18px;
     position: relative;
     margin: 0 20px;
@@ -93,7 +99,7 @@ form .formrow .textarea{
     cursor: grab;
 }
 .formbtn:hover{
-    background-color: lightgreen;
+    background-color: rgb(9, 195, 233);
 }
 .locationdiv{
     display: flex;

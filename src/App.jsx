@@ -33,7 +33,7 @@ function App() {
   };
 
   const handleOptionClick = (option) => {
-    setActiveOption(option);
+    setActiveOption(option.slice(3));
     setIsOpen(false);
     const target = document.getElementById(option.toLowerCase())
     if(target){
@@ -58,12 +58,12 @@ function App() {
                 <div>
                   <div id="mobilemain">
                     <div id="mobilenav">
-                      <img src="src/assets/logo_trial.jpeg" alt="" className='moblogoimg' />
+                      <img src="src/assets/logo.jpeg" alt="" className='moblogoimg' />
                     </div>
                     <div className='mobimgdiv'>
                       <img src="src/assets/squares-311941.svg" alt="" />
                     </div>
-                    <div className="menubar">
+                    <div className="menubar optionsdiv">
                       <div onClick={handleMenuClick}>
                         {activeOption ? activeOption : 'Select an Option'}
                       </div>
@@ -81,15 +81,16 @@ function App() {
                     <div className='about' id='mobabout'><Mobileabout/></div>
                     <div className='team' id='mobteam'><Mobileteam/></div>
                     <div id='mobcontact'>
-                      <h1>Connect With Us</h1>
+                      <h1 style={{color : 'rgb(7, 28, 146)'}}>Connect With Us</h1>
                       <Contact styles={true}/>
                     </div>
+                    <div><Footer styles={true}/></div>
                 </div>
             ) : (
               <div>
                 <div id="homemain">
                   <nav id="nav">
-                    <img src="src/assets/logo_trial.jpeg" alt="" className='logoimg' />  
+                    <img src="src/assets/logo.jpeg" alt="" className='logoimg' />  
                     <div className="headings">
                       {options.map((option) => (
                         <h1 key={option} onClick={() => handlenavCLick(option)}>{option}</h1>
@@ -102,7 +103,7 @@ function App() {
                       <img src="src/assets/squares-311941.svg" alt="" />
                     </div>
                     <div className='heroheaddiv'>
-                      <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise your digital dreams.</h2>
+                      <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.</h2>
                     </div>
                   </div>
                 </div>

@@ -8,6 +8,7 @@ import 'leaflet/dist/leaflet.css';
 const Contact = ({styles}) => {
     let newstyles = {}
     let mapstyles = {}
+    let btnstyles = {}
     if(styles === true){
         newstyles = {
             display : 'block',
@@ -17,6 +18,9 @@ const Contact = ({styles}) => {
             width : '100%',
             padding : '3vw'
         }
+        btnstyles = {
+            padding : '4vw 4vw'
+        }
     }else{
         newstyles = {}
         mapstyles = {}
@@ -25,19 +29,6 @@ const Contact = ({styles}) => {
   return (
     <div className='contact-div' style={newstyles}>
         <div className="map-div" style={mapstyles}>
-            {/* <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ width: "100%", height: "100%" }} >
-                <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />  
-                <Marker position={position}>
-                    <Popup>
-                        Meet Us Here
-                    </Popup>
-                </Marker>
-            </MapContainer>
-            <div className='locationdiv'>
-                <h4>TU Chemnitz</h4>
-            </div> */}
             <img src="src/assets/man-311326.svg" alt="" />
         </div>
         <div id="form-div">
@@ -71,7 +62,7 @@ const Contact = ({styles}) => {
                 </div>
                 <div className="formrow">
                     <div>
-                        <button className="formbtn">Submit</button>
+                        <button className="formbtn" style={btnstyles}>Submit</button>
                     </div>
                 </div>
             </form>
