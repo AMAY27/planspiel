@@ -1,0 +1,102 @@
+.contact-div{
+    display: flex;
+    padding: 1vw 1.5vw;
+}
+
+.map-div{
+    height: 300px;
+    width: 500px;
+    padding-top: 2vw;
+}
+
+#form-div{
+    border-radius: 20px;
+    padding: 2vw 4vw;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: white;
+}
+#form-div form .formrow{
+    display: flex;
+    margin: 32px 0;
+}
+form .formrow .inputs{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+form .formrow .textarea{
+    height: 70px;
+}
+.inputs input, .textarea textarea{
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.inputs input:focus ~ label, .textarea textarea:focus ~ label,
+.inputs input:valid ~ label, .textarea textarea:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 18px;
+    color: darkgreen;
+}
+.textarea textarea{
+    resize: none;
+    padding-top: 10px;
+}
+.inputs label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+.textarea label{
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+  }
+.inputs .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.inputs .underline:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: darkgreen;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.inputs input:focus ~ .underline:before,
+.inputs input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+
+.formbtn{
+    padding: 0.5vw 0.8vw;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    font-size: 18px;
+    position: relative;
+    margin: 0 20px;
+    outline: none;
+    cursor: grab;
+}
+.formbtn:hover{
+    background-color: lightgreen;
+}
+.locationdiv{
+    display: flex;
+    margin-top: 20px;
+
+}

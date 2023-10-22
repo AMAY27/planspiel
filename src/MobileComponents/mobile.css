@@ -1,0 +1,51 @@
+.mob-about{
+    margin-top: 10px;
+    /* background-repeat: no-repeat;
+    background: linear-gradient(to bottom, rgba(26, 52, 2, 0.859), rgb(22, 45, 1)), url('../assets/mosaic-2790344_1280.png');
+    background-size: contain; */
+    background-color: white;
+    padding: 8vw 8vw;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.mob-about p{
+    font-size: 22px;
+    color: black;
+}
+
+.mob-about h1{
+    color: rgb(7, 28, 146);
+    font-size: 15vw;
+    font-weight: 800;
+    letter-spacing: 1vw;
+    line-height: 1;
+  }
+
+.mobile-teamdiv{
+    padding: 8vw 8vw;
+    gap: 30px;
+    height: auto;
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, rgba(208, 235, 236, 0.984), rgba(238, 240, 235, 0.859)),  url('../assets/squaregreen.png');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    text-align: center;
+}
+
+.mobile-teamdiv h1{
+    color: rgb(7, 28, 146);
+    font-size: 18vw;
+    font-weight: 800;
+    letter-spacing: 0vw;
+    line-height: 1;
+}
+
+.mobteamcards{
+    margin-top: 10px;
+    gap: 30px;
+    padding-top: 2vw;
+    justify-content: center;
+}

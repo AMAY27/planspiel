@@ -1,0 +1,55 @@
+.cardparent {
+    height: 350px;
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    /* justify-content: center; */
+}
+
+.cardparent:hover {
+    opacity: 0.7;
+    background-image: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardparent .cardnormaldiv {
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black ;
+    transition: 0.5s;
+}
+
+.cardnormaldiv{
+    background-color: aliceblue;
+    padding: 1vw 1vw;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.cardparent:hover .cardnormaldiv {
+    display: none;
+}
+
+.cardparent:hover .cardhoverdiv {
+    /* content: 'Details'; */
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 150px;
+    left: 135px;
+    font-size: 24px;
+    color: black;
+    transition: 0.5s;
+    justify-content: center;
+}
+.imagediv img{
+    max-width: 100%;
+    max-height: 100%;
+}

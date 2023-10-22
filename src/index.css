@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#main{
+  width: 100%;
+  background-color: #fff;
+}
+
+#home{
+  width: 100%;
+  background-color: #fff;
+}
+
+#nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 10vw;
+}
+
+#mobilenav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 10vw;
+}
+
+
+#nav h1{
+  color: rgba(2, 71, 2, 0.942);
+  font-weight: bold;
+  height: 40px;
+  font-size: 28px;
+}
+
+.logoimg{
+  height: 4vw;
+  width: 10vw;
+}
+
+#homemain{
+  width: 100%;
+  background-repeat: no-repeat;
+  /* background: linear-gradient(to bottom, rgba(48, 220, 229, 0.984), rgba(55, 223, 190, 0.859)),  url('./assets/mosaic-2790344_1280.png'); */
+  background: linear-gradient(to bottom, rgba(137, 231, 234, 0.984), rgba(233, 244, 241, 0.859)),  url('./assets/squaregreen.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#mobilemain{
+  width: 100%;
+  background-repeat: no-repeat;
+  /* background: linear-gradient(to bottom, rgba(48, 220, 229, 0.984), rgba(55, 223, 190, 0.859)),  url('./assets/mosaic-2790344_1280.png'); */
+  background: linear-gradient(to bottom, rgba(137, 231, 234, 0.984), rgba(233, 244, 241, 0.859)),  url('./assets/squaregreen.png');
+  background-size: cover;
+  background-position: center;  
+  padding: 2vw 2vw;
+  height: 100vh;
+}
+
+.headings{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+#homemain .headings h1{
+  color: #0484f3;
+  font-size: 2vw;
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1;
+  cursor: grab;
+}
+#homemain .headings h1:hover{
+  color: orange;
+}
+
+.homemainchilds{
+  padding: 5vw 10vw;
+  height: auto;
+  display: flex;
+}
+
+.imgdiv{
+  height: 20vw;
+  width: 20vw;
+}
+
+.mobimgdiv{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+/* .mobimgdiv img{
+  height: 70vw;
+} */
+
+.menubar{
+  margin: 5vw;
+  border: 2px solid darkgreen;
+  padding: 2vw 4vw;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.aboutsection{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  display: flex;
+  /* padding: 8vw 10vw; */
+}
+
+.aboutsection h1{
+  font-size: 7vw;
+  font-weight: 800;
+  letter-spacing: 1vw;
+  line-height: 1;
+}
+.aboutheads{
+  color: rgb(9, 195, 233);
+  margin: 3vw 3vw 5vw 5vw;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  display: block;
+  width: 50%;
+}
+.aboutheaddiv{
+  text-align: center;
+}
+.aboutimg{
+  padding: 12vw;
+  background-repeat: no-repeat;
+  /* background: linear-gradient(to bottom, rgba(48, 220, 229, 0.984), rgba(55, 223, 190, 0.859)),  url('./assets/mosaic-2790344_1280.png'); */
+  background: url('./assets/undraw_engineering_team_a7n2.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutcontent{
+  color: rgb(9, 195, 233);
+  padding-top : 8vw;
+  padding-bottom: 4vw;
+  padding-right: 8vw;
+  font-size: 35px;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+.teamsection{
+  width: 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, rgba(208, 235, 236, 0.984), rgba(238, 240, 235, 0.859)),  url('./assets/squaregreen.png');
+  background-size: cover;
+  background-position: center;
+  /* padding: 4vw 10vw; */
+}
+.teamheadings{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding-top: 3vw;
+  padding-bottom: 1vw;
+  margin: 0vw 10vw;
+}
+.teamsection h1{
+  color: rgb(9, 195, 233);
+  /* -webkit-text-stroke: 1px rgb(101, 122, 238); */
+  font-size: 6vw;
+  font-weight: 800;
+  letter-spacing: 0vw;
+  line-height: 1;
+}
+/* .teamheadings>h1:nth-child(odd){
+  color: rgb(9, 195, 233);
+} */
+
+.teamcards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 2vw;
+  padding-bottom: 6vw;
+  justify-content: center;
+  margin: 0vw 10vw;
+}
+.teamcard{
+  border-radius: 10px;
+  background-color: white;
+  height: 250px;
+  width: 30%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.teamcard>h2{
+  padding: 1vw 1vw;
+}
+
+#contact{
+  padding: 4vw 10vw;
+}
+#contact h1{
+  color: rgb(9, 195, 233);
+  font-size: 6vw;
+  font-weight: 800;
+  letter-spacing: 0vw;
+  line-height: 1;
+}
+.conheads{
+  padding-bottom: 2vw;
+  display: flex;
+  gap: 20px;
+}
+/* #contact>.conheads>h1:nth-child(odd){
+  color: rgb(9, 195, 233);
+} */
+#mobcontact h1{
+  color: transparent;
+  -webkit-text-stroke: 2px darkgreen;
+  font-size: 18vw;
+  font-weight: 800;
+  letter-spacing: 0vw;
+  line-height: 1;
+  padding: 2vw 5vw;
+}
+/* .homeheadingsbtn{
+  padding: .5vw 1.5vw;
+  background-color: #0484f3;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+} */
+
+.heroheaddiv{
+  margin-left: 9vw;
+  padding: 6vw 4vw;
+  font-size: 24px;
+  /* background-color: aliceblue; */
+  justify-content: center;
+  text-align: center;
+  color: #0484f3;
+}
