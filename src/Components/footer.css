@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('./assets/Copperplate Gothic Std 32 BC.otf') format('truetype');
+    src: url('../../public/assets/Copperplate Gothic Std 32 BC.otf') format('truetype');
     /* Add other font properties like font-weight, font-style, etc. */
 }
 
@@ -11,7 +11,7 @@
     width: 100%;
     background-repeat: no-repeat;
     /* background: linear-gradient(to bottom, rgba(26, 52, 2, 0.859), rgb(22, 45, 1)), url('../assets/mosaic-2790344_1280.png'); */
-    background: linear-gradient(to bottom, rgba(13, 117, 122, 0.984), rgba(1, 24, 20, 0.859)),  url('../assets/squaregreen.png');
+    background: linear-gradient(to bottom, rgba(13, 117, 122, 0.984), rgba(1, 24, 20, 0.859)),  url('../../public/assets/squaregreen.png');
     background-size: cover;
     background-position: center;
 }

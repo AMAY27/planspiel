@@ -11,7 +11,6 @@ const Footer = ({ styles }) => {
   let imgstyles = {};
   let childonestyle = {};
   let mapstyles = {};
-  let mapdivstyles = {};
   let childtwostyles = {};
   let childthree = {};
   if (styles === true) {
