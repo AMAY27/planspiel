@@ -1,6 +1,5 @@
-import React from "react";
 import "./footer.css";
-import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import customMarkerIcon from "../../public/assets/marker-icon.png";
@@ -34,9 +33,6 @@ const Footer = ({ styles }) => {
       width: "380px",
       paddingLeft: "5vw",
       paddingBottom: "8vw",
-    };
-    mapdivstyles = {
-      width: "100%",
     };
     childtwostyles = {
       paddingLeft: "28vw",
@@ -107,7 +103,7 @@ const Footer = ({ styles }) => {
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <Marker position={position} icon={customMapMarkerIcon}>
-              <Popup>Meetsss Us Here</Popup>
+              <Popup>Meet Us Here</Popup>
             </Marker>
           </MapContainer>
         </div>
