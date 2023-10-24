@@ -2,6 +2,8 @@ import React from "react";
 import "./footer.css";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+import customMarkerIcon from "../../public/assets/marker-icon.png";
 import { FaEnvelope, FaMapMarkerAlt, FaLinkedin } from "react-icons/fa";
 
 const Footer = ({ styles }) => {
@@ -43,6 +45,12 @@ const Footer = ({ styles }) => {
       width: "100%",
     };
   }
+
+  const customMapMarkerIcon = new L.Icon({
+    iconUrl: customMarkerIcon,
+    iconSize: [25, 41],
+  });
+
   return (
     <div className="footer-div" style={newstyles}>
       <div className="footer-child" id="footer-child1" style={childonestyle}>
@@ -98,8 +106,8 @@ const Footer = ({ styles }) => {
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={position}>
-              <Popup>Meet Us Here</Popup>
+            <Marker position={position} icon={customMapMarkerIcon}>
+              <Popup>Meetsss Us Here</Popup>
             </Marker>
           </MapContainer>
         </div>
