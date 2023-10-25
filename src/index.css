@@ -168,7 +168,7 @@ html, body {
   padding: 12vw;
   background-repeat: no-repeat;
   /* background: linear-gradient(to bottom, rgba(48, 220, 229, 0.984), rgba(55, 223, 190, 0.859)),  url('./assets/mosaic-2790344_1280.png'); */
-  background: url('./assets/undraw_engineering_team_a7n2.svg');
+  background: url('../public/assets/undraw_engineering_team_a7n2.svg');
   background-size: cover;
   background-position: center;
 }
@@ -186,7 +186,7 @@ html, body {
 .teamsection{
   width: 100%;
   background-repeat: no-repeat;
-  background: linear-gradient(to bottom, rgba(208, 235, 236, 0.984), rgba(238, 240, 235, 0.859)),  url('./assets/squaregreen.png');
+  background: linear-gradient(to bottom, rgba(208, 235, 236, 0.984), rgba(238, 240, 235, 0.859)),  url('../public/assets/squaregreen.png');
   background-size: cover;
   background-position: center;
   /* padding: 4vw 10vw; */
