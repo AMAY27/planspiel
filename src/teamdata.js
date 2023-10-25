@@ -3,21 +3,21 @@
 export const teamdata =  [
     {
       name : 'Ajay Dhami',
-      role : 'Product Owner',
+      role : 'Fullstack Developer',
       imageUrl : '/assets/ajay_profile.jpeg',
       linkedurl : 'https://www.linkedin.com/in/ajay-dhami/',
       githuburl : 'https://github.com/AjayDhami'
     },
     {
       name : 'Drashti Patel',
-      role : 'Scrum Master',
+      role : 'Fullstack Developer',
       imageUrl : '/assets/drashti_profile.jpg',
       linkedurl : 'https://linkedin.com/in/drashtipatel89',
       githuburl : 'https://github.com/pdrashti8'
     },
     {
       name : 'Kashfa Sehejat Sezuti',
-      role : 'Frontend Developer',
+      role : 'Fullstack Developer',
       imageUrl : '/assets/kashfa_new.jpeg',
       linkedurl : 'https://www.linkedin.com/in/kashfa-sehejat-sezuti/',
       githuburl : 'https://github.com/kashfasehejatsezuti'

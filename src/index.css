@@ -115,8 +115,8 @@ html, body {
 }
 
 .imgdiv{
-  height: 20vw;
-  width: 20vw;
+  height: 40%;
+  width: 40%;
 }
 
 .mobimgdiv{
@@ -146,6 +146,13 @@ html, body {
   /* padding: 8vw 10vw; */
 }
 
+@media (max-width: 1100px) {
+  .aboutsection {
+    font-size: medium;
+    flex-direction: column;
+  }
+}
+
 .aboutsection h1{
   font-size: 7vw;
   font-weight: 800;
@@ -155,7 +162,6 @@ html, body {
 .aboutheads{
   color: rgb(9, 195, 233);
   margin: 3vw 3vw 5vw 5vw;
-  display: flex;
   gap: 40px;
   justify-content: center;
   display: block;
@@ -182,6 +188,30 @@ html, body {
   justify-content: center;
   text-align: center;
   width: 50%;
+}
+
+@media (max-width: 1100px) {
+  .aboutheads {
+    font-size: 9vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    background-color: #0484f3;
+    width: auto;
+  }.aboutcontent{
+    color: rgb(9, 195, 233);
+    padding-left: 8vw;
+    padding-top : 2vw;
+    padding-bottom: 4vw;
+    padding-right: 8vw;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .aboutimg{
+    padding: 20vw;
+  }
 }
 .teamsection{
   width: 100%;
