@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'CustomFont';
-  src: url('./assets/Copperplate Gothic Std 32 BC.otf') format('truetype');
+  src: url('../public/assets/Copperplate Gothic Std 32 BC.otf') format('truetype');
   /* Add other font properties like font-weight, font-style, etc. */
 }
 
@@ -74,7 +74,7 @@ html, body {
   width: 100%;
   background-repeat: no-repeat;
   /* background: linear-gradient(to bottom, rgba(48, 220, 229, 0.984), rgba(55, 223, 190, 0.859)),  url('./assets/mosaic-2790344_1280.png'); */
-  background: linear-gradient(to bottom, rgba(137, 231, 234, 0.984), rgba(233, 244, 241, 0.859)),  url('./assets/squaregreen.png');
+  background: linear-gradient(to bottom, rgba(137, 231, 234, 0.984), rgba(233, 244, 241, 0.859)),  url('../public/assets/squaregreen.png');
   background-size: cover;
   background-position: center;
 }
@@ -83,7 +83,7 @@ html, body {
   width: 100%;
   background-repeat: no-repeat;
   /* background: linear-gradient(to bottom, rgba(48, 220, 229, 0.984), rgba(55, 223, 190, 0.859)),  url('./assets/mosaic-2790344_1280.png'); */
-  background: linear-gradient(to bottom, rgba(137, 231, 234, 0.984), rgba(233, 244, 241, 0.859)),  url('./assets/squaregreen.png');
+  background: linear-gradient(to bottom, rgba(137, 231, 234, 0.984), rgba(233, 244, 241, 0.859)),  url('../public/assets/squaregreen.png');
   background-size: cover;
   background-position: center;  
   padding: 2vw 2vw;
