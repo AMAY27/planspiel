@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = ({ styles }) => {
   let newstyles = {};
@@ -49,14 +51,29 @@ const Contact = ({ styles }) => {
         recipient: "vtenet125@gmail.com",
         message: formData.message,
       });
-      // TODO Success response
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        message: "",
+      });
+
+      toast.success("Message sent successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
     } catch (error) {
-      console.log(error);
+      toast.error("Message could not be sent. Please try again later.", {
+        position: "top-right",
+        autoClose: 5000,
+      });
     }
   };
 
   return (
     <div className="contact-div" style={newstyles}>
+      <ToastContainer />
       <div className="map-div" style={mapstyles}>
         <img src="/assets/man-311326.svg" alt="" />
       </div>
