@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = ({ styles }) => {
   let newstyles = {};
@@ -49,68 +51,89 @@ const Contact = ({ styles }) => {
         recipient: "vtenet125@gmail.com",
         message: formData.message,
       });
-      // TODO Success response
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    const firstName = e.target.elements["firstName"].value;
-    const lastName = e.target.elements["lastName"].value;
-    const email = e.target.elements["email"].value;
-    const message = e.target.elements["message"].value;
-    const emailBody = `Name: ${firstName} ${lastName}\nEmail: ${email}\nMessage: ${message}`;
-    const companyEmail = "vtenet125@gmail.com";
-    if (
-      window.confirm(
-        "Review your message. Click OK to open your email client to send this message."
-      )
-    ) {
-      window.location.href = `mailto:${companyEmail}?subject=Contact Us&body=${encodeURIComponent(
-        emailBody
-      )}`;
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        message: "",
+      });
+
+      toast.success("Message sent successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+    } catch (error) {
+      toast.error("Message could not be sent. Please try again later.", {
+        position: "top-right",
+        autoClose: 5000,
+      });
     }
   };
 
   return (
     <div className="contact-div" style={newstyles}>
+      <ToastContainer />
       <div className="map-div" style={mapstyles}>
         <img src="/assets/man-311326.svg" alt="" />
       </div>
       <div id="form-div">
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <div className="formrow">
             <div className="inputs">
-              <input type="text" required={true} />
+              <input
+                type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleInputChange}
+                required
+              />
               <div className="underline"></div>
-              <label for="">First Name</label>
+              <label>First Name</label>
             </div>
             <div className="inputs">
-              <input type="text" required={true} />
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleInputChange}
+                required
+              />
               <div className="underline"></div>
-              <label for="">Last Name</label>
+              <label>Last Name</label>
             </div>
           </div>
           <div className="formrow">
             <div className="inputs">
-              <input type="text" required={true} />
+              <input
+                type="text"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
               <div className="underline"></div>
-              <label for="">Email</label>
+              <label>Email</label>
             </div>
           </div>
           <div className="formrow">
             <div className="inputs textarea">
-              <textarea rows="8" cols="80" required={true}></textarea>
+              <textarea
+                rows="8"
+                cols="80"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+              ></textarea>
               <br />
               <div className="underline"></div>
-              <label for="">Write your message</label>
+              <label>Write your message</label>
             </div>
           </div>
           <div className="formrow">
             <div>
-              <button className="formbtn" style={btnstyles}>
+              <button className="formbtn" style={btnstyles} type="submit">
                 Submit
               </button>
             </div>
