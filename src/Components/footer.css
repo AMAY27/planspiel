@@ -7,7 +7,7 @@
 
 .footer-div{
     display: flex;
-    height: 20vw;
+    height: auto;
     width: 100%;
     background-repeat: no-repeat;
     /* background: linear-gradient(to bottom, rgba(26, 52, 2, 0.859), rgb(22, 45, 1)), url('../assets/mosaic-2790344_1280.png'); */
@@ -22,7 +22,7 @@
     font-family: "CustomFont";
 }
 #footer-child1{
-    padding-top: 6vw;
+    padding-top: 4vw;
     justify-content: center;
     align-items: center;
     padding-left: 2vw;
@@ -35,12 +35,17 @@
     width: 10vw;
 }
 #footer-child3 {
-    padding: 1.5vw 3vw;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    align-items: center;
+    text-align: center;
 }
 #map-div{
-    height: 240px;
-    width: 450px;
+    height: 80%;
+    width: 100%;
+    background-color: aliceblue;
 }
 #maphead{
     padding-bottom: 0.5vw;
@@ -63,3 +68,36 @@
     text-align: center;
     padding: 1vw;
 }
+
+@media (max-width: 1100px) {
+    #footer-child2{
+        color: white;
+        padding-top: 11vw;
+        padding-left: 12vw;
+        padding-bottom: 8vw;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    #footer-child1{
+        padding-top: 4vw;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2vw;
+        color: white;
+        letter-spacing: 0.1rem;
+        font-size: 12px;
+    }
+    #footer-child3 {
+        padding-left: 3.5vw;
+        padding-right: 3.5vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        align-items: center;
+        text-align: center;
+    }
+    .imagediv img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+  }
