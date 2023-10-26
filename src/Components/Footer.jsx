@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import customMarkerIcon from "../../public/assets/marker-icon.png";
-import { FaEnvelope, FaMapMarkerAlt, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = ({ styles }) => {
   const position = [50.8399418760066, 12.927741666210276];
@@ -28,16 +28,15 @@ const Footer = ({ styles }) => {
       width: "100%",
     };
     mapstyles = {
-      height: "280px",
-      width: "380px",
-      paddingLeft: "5vw",
-      paddingBottom: "8vw",
+      height: "300px",
+      width: "100%"
     };
     childtwostyles = {
       paddingLeft: "28vw",
     };
     childthree = {
       width: "100%",
+      padding : "8vw"
     };
   }
 
@@ -68,6 +67,18 @@ const Footer = ({ styles }) => {
           <h3>www.linkedin.com/in/v-tenet/</h3>
         </div>
         <div className="footheads">
+          <a
+            href="https://www.instagram.com/vtenet_2023/"
+            target="_blank"
+            style={{ color: "white" }}
+          >
+            <h3>
+              <FaInstagram />
+            </h3>
+          </a>
+          <h3>Follow us on Instagram</h3>
+        </div>
+        <div className="footheads">
           <h3>
             <FaMapMarkerAlt />
           </h3>
@@ -79,6 +90,7 @@ const Footer = ({ styles }) => {
             This website does not belong to a real company. It is a Planspiel
             Web Engineering project at University of Technology Chemnitz.
           </h3>
+          <br/><p><div><p>Any concern regarding this website contact person is : Amay Rajvaidya</p><p>Address : Vetterstr. 66</p></div></p>
         </div>
       </div>
       <div className="footer-child" id="footer-child2" style={childtwostyles}>
