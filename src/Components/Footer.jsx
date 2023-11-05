@@ -102,7 +102,7 @@ const Footer = ({ styles }) => {
                 Any concern regarding this website contact person is : Amay
                 Rajvaidya
               </p>
-              <p>Address : Vetterstr. 66</p>
+              <p>Address : Vetterstr. 66, Chemnitz</p>
             </div>
           </p>
         </div>
