@@ -40,6 +40,7 @@ html, body {
   width: 100%;
   padding: 15px 10vw;
   height: auto;
+  color: #0484f3;
 }
 
 .mobilemain{
@@ -307,7 +308,8 @@ html, body {
   font-family: "CustomFont";
 }
 
-.heroheaddiv .rollerhead{
+.rollerhead{
+  margin-top: 30px;
   height: 4.125rem;
   line-height: 4rem;
   position: relative;
@@ -316,14 +318,13 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   color: #F88A26;
 }
 
 .rollerhead #rollheadtext {
   position: absolute;
   top: 0;
-  animation: slide 7s infinite;  
+  animation: slide 6s linear infinite;  
 }
 
 @keyframes slide {
@@ -337,6 +338,9 @@ html, body {
     top: -8rem;
   }
   72.5%{
+    top: -12.25rem;
+  }
+  100%{
     top: -12.25rem;
   }
 }
@@ -356,7 +360,7 @@ html, body {
 
   .heromobheaddiv .rollerhead{
     padding-top: 30px;
-    font-size: 24px;
+    font-size: 20px;
     height: 35px;
     line-height: 2rem;
     position: relative;
@@ -384,6 +388,9 @@ html, body {
     top: -4.25rem;
   }
   72.5%{
+    top: -6.375rem;
+  }
+  100%{
     top: -6.375rem;
   }
 }

@@ -87,7 +87,7 @@ function App() {
                       <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.
                         <div className="rollerhead">
                           <span id='rollheadtext'>Data Management<br/>
-                            Software<br/>Web Applications<br/> Content Management
+                            Software Development<br/>Web Applications<br/>Organizational Management
                           </span>
                         </div>
                       </h2>
@@ -118,10 +118,10 @@ function App() {
                       <img src="/assets/squares-311941.svg" alt="" />
                     </div>
                     <div className='heroheaddiv'>
-                      <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.
+                      <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.<br/>
                         <div className="rollerhead">
                           <span id='rollheadtext'>Data Management<br/>
-                            Software<br/>Web Applications<br/> Content Management
+                            Software Development<br/>Web Applications<br/> Organizational Management
                           </span>
                         </div>
                       </h2>
