@@ -9,7 +9,7 @@ const Mobileteam = () => {
         <h1>Meet The team</h1>
         <div className='mobteamcards'>
             {teamdata.map((key)=>(
-                <Teamcard name= {key.name} role = {key.role} styles={true} imageUrl = {key.imageUrl}/>
+                <Teamcard name= {key.name} role = {key.role} subRole = {key.subRole} styles={true} imageUrl = {key.imageUrl}/>
             ))}
         </div>
     </div>

@@ -36,7 +36,7 @@ html, body {
 #mobilenav{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   padding: 15px 10vw;
   height: auto;
@@ -104,6 +104,7 @@ html, body {
   line-height: 1;
   cursor: grab;
 }
+
 #homemain .headings h1:hover{
   color: orange;
 }
@@ -304,4 +305,86 @@ html, body {
   text-align: center;
   color: #0484f3;
   font-family: "CustomFont";
+}
+
+.heroheaddiv .rollerhead{
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: #F88A26;
+}
+
+.rollerhead #rollheadtext {
+  position: absolute;
+  top: 0;
+  animation: slide 7s infinite;  
+}
+
+@keyframes slide {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -4rem;    
+  }
+  50%{
+    top: -8rem;
+  }
+  72.5%{
+    top: -12.25rem;
+  }
+}
+
+@media (max-width: 600px){
+
+  .heromobheaddiv{
+    padding-top: 40px;
+    font-size: 14px;
+    /* background-color: aliceblue; */
+    justify-content: center;
+    text-align: center;
+    color: #0484f3;
+    font-family: "CustomFont";
+  }
+  
+
+  .heromobheaddiv .rollerhead{
+    padding-top: 30px;
+    font-size: 24px;
+    height: 35px;
+    line-height: 2rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F88A26;
+  }
+  
+  
+.rollerhead #rollheadtext {  
+  animation: slide-mob 6s infinite;  
+}
+  
+  @keyframes slide-mob {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -2.125rem;    
+  }
+  50%{
+    top: -4.25rem;
+  }
+  72.5%{
+    top: -6.375rem;
+  }
+}
 }

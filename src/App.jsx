@@ -6,6 +6,8 @@ import Mobileabout from './MobileComponents/Mobileabout';
 import { teamdata } from './teamdata';
 import Mobileteam from './MobileComponents/Mobileteam';
 import Footer from './Components/Footer';
+import {FaAlignJustify} from "react-icons/fa";
+import './Components/Mobnav.css'
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -32,14 +34,30 @@ function App() {
     setActiveOption(null);
   };
 
+
+  const MobNavBar = () => {
+    return(
+      <div id="mySidenav" class="sidenav">
+        <div class="closebtn" onClick={() => setIsOpen(false)}><FaAlignJustify/></div>
+        {moboptions.map((option) => (
+          <div key={option} onClick={() => handleOptionClick(option)}>
+            {option.slice(3)}
+          </div>
+        ))}
+    </div>
+    )
+  }
   const handleOptionClick = (option) => {
     setActiveOption(option.slice(3));
-    setIsOpen(false);
     const target = document.getElementById(option.toLowerCase())
     if(target){
       target.scrollIntoView({behavior: 'smooth'})
     }
   };
+
+  const handlenavtoggle = () =>{
+    setIsOpen(true)
+  }
 
   const handlenavCLick = (option) => {
     const target = document.getElementById(option.toLowerCase())
@@ -56,26 +74,23 @@ function App() {
     <div id="home">
             {isMobile ? (
                 <div>
+                  {isOpen && <MobNavBar/>}
                   <div id="mobilemain">
                     <div id="mobilenav">
                       <img src="/assets/logo.jpeg" alt="" className='moblogoimg' />
+                      <div onClick={handlenavtoggle}><FaAlignJustify/></div>
                     </div>
                     <div className='mobimgdiv'>
                       <img src="/assets/squares-311941.svg" alt="" />
                     </div>
-                    <div className="menubar optionsdiv">
-                      <div onClick={handleMenuClick}>
-                        {activeOption ? activeOption : 'Select an Option'}
-                      </div>
-                      {isOpen && (
-                        <div className="togglemenu">
-                          {moboptions.map((option) => (
-                            <div key={option} onClick={() => handleOptionClick(option)}>
-                              {option.slice(3)}
-                            </div>
-                          ))}
+                    <div className='heromobheaddiv'>
+                      <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.
+                        <div className="rollerhead">
+                          <span id='rollheadtext'>Data Management<br/>
+                            Software<br/>Web Applications<br/> Content Management
+                          </span>
                         </div>
-                      )}
+                      </h2>
                     </div>
                   </div>
                     <div className='about' id='mobabout'><Mobileabout/></div>
@@ -103,7 +118,13 @@ function App() {
                       <img src="/assets/squares-311941.svg" alt="" />
                     </div>
                     <div className='heroheaddiv'>
-                      <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.</h2>
+                      <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.
+                        <div className="rollerhead">
+                          <span id='rollheadtext'>Data Management<br/>
+                            Software<br/>Web Applications<br/> Content Management
+                          </span>
+                        </div>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -133,7 +154,7 @@ function App() {
                   </div>
                   <div className='teamcards'>
                     {teamdetails.map((member, index)=>(
-                      <Teamcard key={index} name= {member.name} role = {member.role} styles={false} imageUrl = {member.imageUrl} linkurl = {member.linkedurl} giturl = {member.githuburl}/>
+                      <Teamcard key={index} name= {member.name} role = {member.role} subRole = {member.subRole} styles={false} imageUrl = {member.imageUrl} linkurl = {member.linkedurl} giturl = {member.githuburl}/>
                     ))}
                   </div>
                 </div>
