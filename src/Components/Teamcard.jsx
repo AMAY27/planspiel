@@ -2,7 +2,7 @@ import React from 'react'
 import './teamcard.css'
 import { useState } from 'react';
 import { SocialIcon } from 'react-social-icons'
-const Teamcard = ({name, role, styles, imageUrl, linkurl, giturl}) => {
+const Teamcard = ({name, role, subRole, styles, imageUrl, linkurl, giturl}) => {
     let newstyle = {}
     let newstylefornormaldiv = {}
     if(styles == true){
@@ -38,6 +38,7 @@ const Teamcard = ({name, role, styles, imageUrl, linkurl, giturl}) => {
         <div className={`cardnormaldiv ${isHovered ? 'hidden' : ''}`} style={newstylefornormaldiv}>
             <h3>{name}</h3>
             <p>{role}</p>
+            <p>{subRole}</p>
         </div>
         {isHovered ? <div className="cardhoverdiv">
             <SocialIcon url={linkurl} target='_blank' />
