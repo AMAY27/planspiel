@@ -3,7 +3,12 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import customMarkerIcon from "../../public/assets/marker-icon.png";
-import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaLinkedin,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Footer = ({ styles }) => {
   const position = [50.8399418760066, 12.927741666210276];
@@ -29,14 +34,14 @@ const Footer = ({ styles }) => {
     };
     mapstyles = {
       height: "300px",
-      width: "100%"
+      width: "100%",
     };
     childtwostyles = {
       paddingLeft: "28vw",
     };
     childthree = {
       width: "100%",
-      padding : "8vw"
+      padding: "8vw",
     };
   }
 
@@ -90,7 +95,16 @@ const Footer = ({ styles }) => {
             This website does not belong to a real company. It is a Planspiel
             Web Engineering project at University of Technology Chemnitz.
           </h3>
-          <br/><p><div><p>Any concern regarding this website contact person is : Amay Rajvaidya</p><p>Address : Vetterstr. 66</p></div></p>
+          <br />
+          <p>
+            <div>
+              <p>
+                Any concern regarding this website contact person is : Amay
+                Rajvaidya
+              </p>
+              <p>Address : Vetterstr. 66</p>
+            </div>
+          </p>
         </div>
       </div>
       <div className="footer-child" id="footer-child2" style={childtwostyles}>
@@ -114,7 +128,17 @@ const Footer = ({ styles }) => {
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <Marker position={position} icon={customMapMarkerIcon}>
-              <Popup>Meet Us Here</Popup>
+              <Popup>
+                <div>
+                  <span style={{ fontWeight: "bold" }}>
+                    Chemnitz University of Technology
+                  </span>
+                  <br />
+                  Str. der Nationen 62, 09111
+                  <br />
+                  Chemnitz
+                </div>
+              </Popup>
             </Marker>
           </MapContainer>
         </div>
