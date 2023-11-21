@@ -13,7 +13,7 @@ export const teamdata =  [
     name : 'Drashti Patel',
     role : 'Scrum Master',
     subRole : 'Backend Developer',
-    imageUrl : '/assets/drashti_profile.jpg',
+    imageUrl : '/assets/drashti_profile1.jpg',
     linkedurl : 'https://linkedin.com/in/drashtipatel89',
     githuburl : 'https://github.com/pdrashti8'
   },
