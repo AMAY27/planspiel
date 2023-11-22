@@ -86,8 +86,8 @@ function App() {
                     <div className='heromobheaddiv'>
                       <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.
                         <div className="rollerhead">
-                          <span id='rollheadtext'>Data Management<br/>
-                            Software Development<br/>Web Applications<br/>Organizational Management
+                          <span id='rollheadtext'>Software Development<br/>
+                          Dark Pattern-free Certfication<br/>Web Application<br/>Automation Platform
                           </span>
                         </div>
                       </h2>
@@ -138,10 +138,10 @@ function App() {
                   </div>
                   <div className="aboutcontent">
                     <p>
-                    A startup providing solutions from building web applications to providing data solutions, serving large and small businesses with a dedicated team.
+                      At V-tenet, we are on a mission to foster a transparent and user-centric digital landscape. Our team has been diligently working to build a revolutionary platform focused on certifying web applications for their commitment to being dark pattern-free.
                     </p>
                     <br/>
-                    <p>At our core, we encourage a culture of innovation and collaboration, driven by the commitment of our diverse and talented team to exceed expectations and ensure customer success.</p>
+                    <p>Our team of experts is at the forefront of developing innovative solutions that will empower us to efficiently analyze our clients' web applications. </p>
                   </div>
                 </div>
                 <div className="teamsection" id='team'>
