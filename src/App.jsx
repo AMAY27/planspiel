@@ -121,7 +121,7 @@ function App() {
                       <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.<br/>
                         <div className="rollerhead">
                           <span id='rollheadtext'>Data Management<br/>
-                            Software Development<br/>Web Applications<br/> Organizational Management
+                          Dark patterns detection<br/>Web Applications<br/>Software Development
                           </span>
                         </div>
                       </h2>
