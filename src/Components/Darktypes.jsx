@@ -49,7 +49,7 @@ const Darktypes = () => {
             <h1>In</h1>
             <h1>Web</h1>
         </div>
-        <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={true} interval={3000}>
+        <Carousel showThumbs={true} showStatus={false} infiniteLoop={true} autoPlay={true} interval={3000}>
           <div className='carousel-card'>
               <div className='image-sec'>
                 <a data-tooltip-id="my-tooltip" data-tooltip-content="This image is taken from" href="https://pixabay.com/" target='blank'><img src="/assets/certificate.jpg" alt="" /></a>
