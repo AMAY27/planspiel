@@ -11,26 +11,26 @@ const Darktypes = () => {
         {
             type : "Fake Scarcity",
             description : "Ever witnessed the kind of content on websites as shown in the image? It is a dark pattern on websites that creates a false sense of urgency showing the limited availability of products. This aims to take advantage of consumer psychology and drive impulsive buying decisions.",
-            imageUrl : "../../public/assets/Fake_Scarcity.jpeg",
+            imageUrl : "/assets/Fake_Scarcity.jpeg",
             link : "https://www.tourradar.com/"
         },
         {
             type : "Misdirection",
             description : "Content is structured in such a manner to divert user attention away from their desired key actions or information, leading them towards an undesired path.  Generally done for promoting a product or service. Deceptive technique used by site owners for their own benefit.",
-            imageUrl : "../../public/assets/Misdirection.jpeg",
+            imageUrl : "/assets/Misdirection.jpeg",
             link : "https://www.flugladen.de/"
         },
         {
             type : "Fake Social Proof",
             description : "Incorporating this type of dark pattern in a website will mislead the users and exploit their trust. Usually done by creating a false impression of popularity through the fabrication of endorsements, or social signals.",
-            imageUrl : "../../public/assets/Fake_Social_proof.jpeg",
+            imageUrl : "/assets/Fake_Social_proof.jpeg",
             link : "https://www.tourradar.com/"
             
         },
         {
             type : "Fake Urgency",
             description : "In the fake urgency category of dark patterns, pressure is created on users to make quick decisions, manipulating them into taking irrational actions. This aims to create an unreal sense of limited-time opportunities.",
-            imageUrl : "../../public/assets/Fake_Urgency.jpeg",
+            imageUrl : "/assets/Fake_Urgency.jpeg",
             link : "https://www.ncl.com/"
         }
     ]
@@ -52,7 +52,7 @@ const Darktypes = () => {
         <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={true} interval={3000}>
           <div className='carousel-card'>
               <div className='image-sec'>
-                <a data-tooltip-id="my-tooltip" data-tooltip-content="This image is taken from" href="https://pixabay.com/" target='blank'><img src="../../public/assets/certificate.jpg" alt="" /></a>
+                <a data-tooltip-id="my-tooltip" data-tooltip-content="This image is taken from" href="https://pixabay.com/" target='blank'><img src="/assets/certificate.jpg" alt="" /></a>
                 <Tooltip id="my-tooltip" />
               </div>
               <div className='text-sec'>
