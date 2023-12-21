@@ -52,7 +52,7 @@ const Darktypes = () => {
         <Carousel showThumbs={true} showStatus={false} infiniteLoop={true} autoPlay={true} interval={3000}>
           <div className='carousel-card'>
               <div className='image-sec'>
-                <a data-tooltip-id="my-tooltip" data-tooltip-content="This image is taken from" href="https://pixabay.com/" target='blank'><img src="/assets/certificate.jpg" alt="" /></a>
+                <a data-tooltip-id="my-tooltip" data-tooltip-content="This image is taken from https://pixabay.com/" href="https://pixabay.com/" target='blank'><img src="/assets/certificate.jpg" alt="" /></a>
                 <Tooltip id="my-tooltip" />
               </div>
               <div className='text-sec'>
@@ -63,7 +63,7 @@ const Darktypes = () => {
           {types.map((type, index) => (
             <div className='carousel-card' key={index}>
               <div className='image-sec'>
-                <a data-tooltip-id="my-tooltip" data-tooltip-content="This image is taken from" href={type.link} target='blank'><img src={type.imageUrl} alt={type.type} /></a>
+                <a data-tooltip-id="my-tooltip" data-tooltip-content={`This example snapshot of dark patterns is taken from ${type.link}`} href={type.link} target='blank'><img src={type.imageUrl} alt={type.type} /></a>
                 <Tooltip id="my-tooltip" />
               </div>
               <div className='text-sec'>
