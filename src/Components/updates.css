@@ -1,0 +1,48 @@
+.head-div-update{
+display: flex;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  /* background-color: aqua; */
+  padding-top: 1vw;
+  margin-top: 2vw;
+}
+.head-div-update h1{
+  color: rgb(9, 195, 233);
+  font-size: 6vw;
+  font-weight: 800;
+  letter-spacing: 0vw;
+  line-height: 1;
+}
+
+.img-div{
+    width: 45%;
+    justify-content: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-block: 2vw;
+    margin-left: 4vw;
+}
+
+.img-div img{
+  max-width: 100%;
+  height: auto;
+}
+
+.primary-div{
+    display: block;
+    align-items: center;
+}
+
+.content-div{
+  display: flex;
+  align-items: center;
+}
+
+.content{
+  width: 45%;
+  height: 100%;
+  padding: .5vw;
+  font-size: 30px;
+  text-align: center;
+}

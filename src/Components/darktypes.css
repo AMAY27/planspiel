@@ -1,0 +1,85 @@
+.typesprimarydiv{
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding: 2%;
+    align-items: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, rgba(208, 235, 236, 0.984), rgba(238, 240, 235, 0.859)),  url('../public/assets/squaregreen.png');
+    background-size: cover;
+    background-position: center;
+
+}
+.head-div{
+    display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding-top: 3vw;
+  padding-bottom: 1vw;
+  margin: 0vw 10vw;
+}
+.head-div h1{
+    color: rgb(9, 195, 233);
+  /* -webkit-text-stroke: 1px rgb(101, 122, 238); */
+  font-size: 6vw;
+  font-weight: 800;
+  letter-spacing: 0vw;
+  line-height: 1;
+}
+/* .carousel{
+    width: 70%;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: pink;
+    margin: 3%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+} */
+
+.carousel-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: green; */
+    padding: 3vw;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.carousel-card p{
+    font-size: 30px;
+}
+
+.carousel-card h3{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.image-sec{
+    width: 50%;
+    padding: 20px;
+    height: 70vh;
+    display: flex;
+    vertical-align: middle;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.text-sec{
+    width: 45%;
+    /* background-color: aliceblue; */
+    height: 100%;
+    padding: 1.5vw;
+}
+
+.image-sec img{
+    /* width: 50%;
+    height: 50vh; */
+    max-width: 100%;
+  height: auto;
+}

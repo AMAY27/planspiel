@@ -7,6 +7,8 @@ import { teamdata } from './teamdata';
 import Mobileteam from './MobileComponents/Mobileteam';
 import Footer from './Components/Footer';
 import {FaAlignJustify} from "react-icons/fa";
+import Darktypes from './Components/Darktypes';
+import Updates from './Components/Updates';
 import './Components/Mobnav.css'
 
 function App() {
@@ -66,7 +68,7 @@ function App() {
     }
   }
 
-  const options = [ 'About', 'Team', 'Contact'];
+  const options = [ 'About', 'Team', 'Contact', 'Dark-patterns','Innovation'];
   const moboptions = ['mobabout' , 'mobteam', 'mobcontact'];
   const teamdetails = teamdata
   return(
@@ -143,6 +145,12 @@ function App() {
                     <br/>
                     <p>Our team of experts is at the forefront of developing innovative solutions that will empower us to efficiently analyze our clients' web applications. </p>
                   </div>
+                </div>
+                <div className="darktypes" id='dark-patterns'>
+                  <Darktypes/>
+                </div>
+                <div id='innovation'>
+                  <Updates/>
                 </div>
                 <div className="teamsection" id='team'>
                   <div className="teamheadings">
