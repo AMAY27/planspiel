@@ -63,7 +63,7 @@ const Darktypes = () => {
           {types.map((type, index) => (
             <div className='carousel-card' key={index}>
               <div className='image-sec'>
-                <a data-tooltip-id="my-tooltip" data-tooltip-content={`This example snapshot of dark patterns is taken from ${type.link}`} href={type.link} target='blank'><img src={type.imageUrl} alt={type.type} /></a>
+                <a data-tooltip-id="my-tooltip" data-tooltip-content={`This example snapshot of dark patterns is taken from ${type.link} on 12/24/2023`} href={type.link} target='blank'><img src={type.imageUrl} alt={type.type} /></a>
                 <Tooltip id="my-tooltip" />
               </div>
               <div className='text-sec'>
