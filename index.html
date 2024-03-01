@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,5 +9,33 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("http://localhost:8080/website/1/certificationImageFetch")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.text();
+          })
+          .then((imageUrl) => {
+            console.log(imageUrl);
+            var img = document.createElement("img");
+            img.src = imageUrl;
+            img.width = 60;
+            img.height = 60;
+
+            var div = document.getElementById("vTenetCertificate");
+            div.innerHTML = "";
+            div.appendChild(img);
+          })
+          .catch((error) => {
+            console.error(
+              "There was a problem with the fetch operation:",
+              error
+            );
+          });
+      });
+    </script>
   </body>
 </html>
