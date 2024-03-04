@@ -19,8 +19,8 @@ display: flex;
     width: 45%;
     justify-content: center;
     padding-top: 1vw;
-    padding-bottom: 1vw;
-    margin-block: 2vw;
+    /* padding-bottom: 1vw;
+    margin-block: 2vw; */
     margin-left: 4vw;
 }
 

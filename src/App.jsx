@@ -10,6 +10,7 @@ import {FaAlignJustify} from "react-icons/fa";
 import Darktypes from './Components/Darktypes';
 import Updates from './Components/Updates';
 import './Components/Mobnav.css'
+import Vort from './Components/Vort';
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -149,8 +150,11 @@ function App() {
                 <div className="darktypes" id='dark-patterns'>
                   <Darktypes/>
                 </div>
-                <div id='innovation'>
+                {/* <div id='innovation'>
                   <Updates/>
+                </div> */}
+                <div>
+                  <Vort/>
                 </div>
                 <div className="teamsection" id='team'>
                   <div className="teamheadings">

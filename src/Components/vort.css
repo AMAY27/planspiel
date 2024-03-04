@@ -1,0 +1,66 @@
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/assets/Copperplate.otf') format('truetype');
+    /* Add other font properties like font-weight, font-style, etc. */
+}
+
+#vortdiv{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    margin-block: 4vw;
+}
+
+#vorthead h1{
+    color: rgb(9, 195, 233);
+    font-weight: bold;
+    font-size: 6vw;
+    font-family: "CustomFont";
+    margin-inline: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#vortdiv p{
+    margin-inline: 4rem;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#vort-img{
+    width: 50%;
+    margin-left: 6vw;
+}
+#vort-img img{
+    max-width: 90%;
+    height: auto;
+    border : 2px solid
+}
+  
+#vort-content{
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    margin-right: 4vw;
+}
+
+#vort-content button{
+    padding-block: 12px;
+    padding-inline: 16px;
+    border: 1px solid rgb(9, 195, 233);
+    color: black;
+    background-color: transparent;
+    margin-top: 2vw;
+    margin-inline: 4rem;
+    font-size: 1.5vw;
+    border-radius: 5px;
+}
+#vort-content button:hover{
+    background-color: rgb(9, 195, 233);
+    color: white;
+}

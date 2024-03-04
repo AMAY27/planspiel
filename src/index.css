@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 
 @font-face {
   font-family: 'CustomFont';
-  src: url('../public/assets/Copperplate Gothic Std 32 BC.otf') format('truetype');
+  src: url('/assets/Copperplate.otf') format('truetype');
   /* Add other font properties like font-weight, font-style, etc. */
 }
 
