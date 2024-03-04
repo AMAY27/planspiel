@@ -108,9 +108,10 @@ const Footer = ({ styles }) => {
         </div>
       </div>
       <div className="footer-child" id="footer-child2" style={childtwostyles}>
-        <div className="child2-div">
+        {/* <div className="child2-div">
           <img src="/assets/Vtenet-icon-2.png" alt="" style={imgstyles} />
-        </div>
+        </div> */}
+        <div id="vTenetCertificate"></div>
       </div>
       <div className="footer-child" id="footer-child3" style={childthree}>
         <div id="maphead">
