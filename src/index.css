@@ -300,7 +300,7 @@ html, body {
 
 .heroheaddiv{
   margin-left: 9vw;
-  padding: 2vw 4vw;
+  padding: 1.5vw 4vw;
   font-size: 24px;
   /* background-color: aliceblue; */
   justify-content: center;
@@ -395,4 +395,20 @@ html, body {
     top: -6.375rem;
   }
 }
+}
+
+.vort-btn{
+  padding-block: 12px;
+    padding-inline: 16px;
+    border: 1px solid rgb(9, 195, 233);
+    color: black;
+    background-color: transparent;
+    margin-top: 2vw;
+    margin-inline: 4rem;
+    font-size: 1.5vw;
+    border-radius: 5px;
+}
+.vort-btn:hover{
+  background-color: rgb(9, 195, 233);
+    color: white;
 }

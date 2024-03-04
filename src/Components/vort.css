@@ -8,6 +8,8 @@
 #vortdiv{
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     margin-block: 4vw;
 }
@@ -26,20 +28,23 @@
 
 #vortdiv p{
     margin-inline: 4rem;
-    font-size: 1.5vw;
+    font-size: 2vw;
     display: flex;
     align-items: center;
     text-align: center;
+    color: rgb(9, 195, 233);
 }
 
 #vort-img{
     width: 50%;
     margin-left: 6vw;
+    border-radius: 20px;
 }
 #vort-img img{
     max-width: 90%;
     height: auto;
-    border : 2px solid
+    border : 2px solid;
+    border-radius: 20px;
 }
   
 #vort-content{
@@ -53,7 +58,7 @@
     padding-block: 12px;
     padding-inline: 16px;
     border: 1px solid rgb(9, 195, 233);
-    color: black;
+    color: rgb(9, 195, 233);
     background-color: transparent;
     margin-top: 2vw;
     margin-inline: 4rem;

@@ -69,7 +69,7 @@ function App() {
     }
   }
 
-  const options = [ 'About', 'Team', 'Contact', 'Dark-patterns','Innovation'];
+  const options = [ 'About', 'Dark-patterns', 'Vort', 'Team', 'Contact', ];
   const moboptions = ['mobabout' , 'mobteam', 'mobcontact'];
   const teamdetails = teamdata
   return(
@@ -89,11 +89,12 @@ function App() {
                     <div className='heromobheaddiv'>
                       <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.
                         <div className="rollerhead">
-                          <span id='rollheadtext'>Software Development<br/>
-                          Dark Pattern-free Certfication<br/>Web Application<br/>Automation Platform
+                          <span id='rollheadtext'>Dark Pattern-free Certfication<br/>
+                          Expert Feedback<br/>Digital Compliance<br/>Ethical Design
                           </span>
                         </div>
                       </h2>
+                      <a href="http://vtenet.s3-website.eu-central-1.amazonaws.com/" target='_blank'><button className='vort-btn'>Get Started with VORT</button></a>
                     </div>
                   </div>
                     <div className='about' id='mobabout'><Mobileabout/></div>
@@ -121,13 +122,14 @@ function App() {
                       <img src="/assets/squares-311941.svg" alt="" />
                     </div>
                     <div className='heroheaddiv'>
-                      <h2><span className='IstyleforHead'>I</span>dea to code, we help you realise digital dreams.<br/>
+                      <h2><span className='IstyleforHead'>I</span>dea to ethics, we help you realise digital compliance.<br/>
                         <div className="rollerhead">
-                          <span id='rollheadtext'>Data Management<br/>
-                          Dark patterns detection<br/>Web Applications<br/>Software Development
+                          <span id='rollheadtext'>Dark patterns detection<br/>
+                          Expert Feedback<br/>Digital Compliance<br/>Ethical Design
                           </span>
                         </div>
                       </h2>
+                      <a href="http://vtenet.s3-website.eu-central-1.amazonaws.com/" target='_blank'><button className='vort-btn'>Get Started</button></a>
                     </div>
                   </div>
                 </div>
@@ -153,7 +155,7 @@ function App() {
                 {/* <div id='innovation'>
                   <Updates/>
                 </div> */}
-                <div>
+                <div id='vort'>
                   <Vort/>
                 </div>
                 <div className="teamsection" id='team'>
