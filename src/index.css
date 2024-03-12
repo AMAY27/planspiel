@@ -412,3 +412,7 @@ html, body {
   background-color: rgb(9, 195, 233);
     color: white;
 }
+
+a:hover{
+  cursor: pointer;
+}
